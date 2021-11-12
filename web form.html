@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <style>
+    body {
+            background-color: skyblue;
+            opacity: 100%;
+        }
+        
+        #p1 {
+            background-color: peru;
+            width: 20%;
+            padding: 10px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        
+        h2 {
+            background-color: blueviolet;
+            padding: 10px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        
+        #button {
+            background-color: chocolate;
+            font-size: large;
+            color: black;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <form action="payment">
+
+        <p id="p1"><b>Payment Form</b></p>
+        <h2>Contact information</h2>
+        <fieldset id="1">
+            <p>Name: <input type="text" name="name" placeholder="ali"></p>
+            <p>Father name: <input type="text" name="Father name" placeholder="asghar"></p>
+            <p>Mobile no: <input type="text" name="Mobile no" placeholder="+92"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>Male: <input type="radio" name="gender" id="male">Female <input type="radio" name="gender" id="female"></p>
+        </fieldset>
+        </P>
+        <fieldset>
+            <p>Address: <textarea name="address" id="Address" cols="100" rows="5"></textarea></p>
+            <p>Email: <input type="email" name="email" id="email" placeholder="@gmail.com"></p>
+            <P>Password: <input type="password" name="password" id="password" placeholder="******"></P>
+        </fieldset>
+        <H2>Payment information</H2>
+        <p><b>CARD TYPE</b>
+            <select name="card type" id="card type">
+            <option value="">---Select a Card Type---</option>
+            <option value="visa">VISA</option>
+            <option value="mastercard">MASTER CARD</option>
+            <option value="Link1">LINK1</option>
+        </select>
+            <P>
+                <B> CARD NUMBER:</B><input type="number" value="card_number" id="card_number">
+                <BR>
+            </P>
+            <P>
+                <B>CARD EXPIRY DATE: </b> <input type="DATE" value="expiry_date" id="expiry_date">
+            </P>
+            <p>
+                <i>(DONT'WORRY YOUR CVV IS HIDDEN)</i>
+                <BR>
+                <B>CVV:
+                <input type="password" NAME="CVV" name="CVV">
+            </B>
+            </p>
+            <p> <input type="button" value="Pay now" name="submit" id="button"></p>
+    </form>
+</body>
+
+</html>
